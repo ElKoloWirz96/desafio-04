@@ -1,0 +1,10 @@
+<div class="container">
+    <mat-form-field appearance="fill">
+      <mat-label>Filtrar datos</mat-label>
+      <input matInput [formControl]="filterControl">
+    </mat-form-field>
+    <ul>
+      <li *ngFor="let item of data$ | async">{{ item }}</li>
+    </ul>
+  </div>
+  
